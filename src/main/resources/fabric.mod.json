@@ -19,7 +19,7 @@
   "environment": "server",
   "entrypoints": {
     "server": [
-      "me.xtrm.barman.BarmanServerInitializer"
+      "me.xtrm.barman.Barman"
     ]
   },
   "mixins": [
