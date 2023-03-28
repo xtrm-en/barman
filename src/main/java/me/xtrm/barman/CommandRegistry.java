@@ -1,7 +1,7 @@
 package me.xtrm.barman;
 
 import com.mojang.brigadier.CommandDispatcher;
-import me.xtrm.barman.command.SpawnCommand;
+import me.xtrm.barman.command.*;
 import net.minecraft.server.command.ServerCommandSource;
 
 import java.util.Set;
@@ -15,7 +15,8 @@ public enum CommandRegistry {
     INSTANCE;
 
     private final Set<Supplier<Consumer<CommandDispatcher<ServerCommandSource>>>> commands = Set.of(
-            SpawnCommand::new
+            SpawnCommand::new,
+            ToggleEndCommand::new
     );
 
     public void register(CommandDispatcher<ServerCommandSource> dispatcher) {
