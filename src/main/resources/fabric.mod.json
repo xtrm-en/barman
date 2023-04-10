@@ -2,32 +2,22 @@
   "schemaVersion": 1,
   "id": "barman",
   "version": "${version}",
-
   "name": "Barman",
   "description": "Le gérant du bistrot. ",
-  "authors": [
-    "xtrm"
-  ],
+  "authors": ["xtrm"],
   "contact": {
     "homepage": "https://github.com/xtrm-en/barman",
     "sources": "https://github.com/xtrm-en/barman"
   },
-
   "license": "CC0-1.0",
   "icon": "assets/modid/icon.png",
-
   "environment": "server",
   "entrypoints": {
-    "server": [
-      "me.xtrm.barman.Barman"
-    ]
+    "server": ["me.xtrm.barman.Barman"]
   },
-  "mixins": [
-    "barman.mixins.json"
-  ],
-
+  "mixins": ["barman.mixins.json"],
   "depends": {
-    "fabricloader": ">=0.14.17",
+    "fabricloader": ">=0.11.0",
     "fabric-api": "*",
     "minecraft": ">=1.19.3",
     "java": ">=17"
